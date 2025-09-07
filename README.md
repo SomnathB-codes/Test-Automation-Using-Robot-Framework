@@ -136,24 +136,25 @@ Before running the tests, ensure you have the following installed:
 - **ChromeDriver** (matching your Chrome version: https://chromedriver.chromium.org/downloads)  
 - Install required Python packages:  
 
+```pip install Selenium```  or in Linux if you face any issue  ```pip install Selenium --break-system-packages```
 
-```pip install robotframework```
+```pip install robotframework```  or in Linux if you face any issue  ```pip install robotframework --break-system-packages```
 
-```pip install robotframework-seleniumlibrary``` 
+```pip install robotframework-seleniumlibrary```  or in Linux if you face any issue  ```pip install robotframework-seleniumlibrary --break-system-packages```
 
 ## ▶️ Running Tests
 
 **Run all test modules**
-```robot -d results testcases/```
+```robot -d results testcases/``` or alternative ```python -m robot -d results testcases/```
 
 **Run a specific test file**
 
 Example: running only the Login module
 
-```robot -d results testcases/login.robot```
+```robot -d results testcases/login.robot```   or alternative ```python -m robot -d results testcases/login.robot```
 
 **Run a specific test case from a file**
 
 Example: running Successful Login Test only
 
-```robot -d results -t "Successful Login Test" testcases/login.robot```
+```robot -d results -t "Successful Login Test" testcases/login.robot```    or alternative ```python -m robot -d results -t "Successful Login Test" testcases/login.robot```
