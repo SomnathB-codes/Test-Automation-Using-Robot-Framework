@@ -28,7 +28,7 @@ This project ensures that **critical shopping functionalities work seamlessly** 
 ```plaintext
 Ecommerce_Automation/
 │
-├── Tests/
+├── testcases/
 │   ├── user_login.robot     # Login functionality
 │   ├── addtocart.robot      # Select & add product
 │   ├── checkout.robot       # Place an order
@@ -144,16 +144,16 @@ Before running the tests, ensure you have the following installed:
 ## ▶️ Running Tests
 
 **Run all test modules**
-```python -m robot -d results Tests/```
+```robot -d results testcases/```
 
 **Run a specific test file**
 
 Example: running only the Login module
 
-```python -m robot -d results Tests/login.robot```
+```robot -d results testcases/login.robot```
 
 **Run a specific test case from a file**
 
 Example: running Successful Login Test only
 
-```python -m robot -d results -t "Successful Login Test" Tests/login.robot```
+```robot -d results -t "Successful Login Test" testcases/login.robot```
